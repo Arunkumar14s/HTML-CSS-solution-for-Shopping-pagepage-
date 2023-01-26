@@ -1,0 +1,181 @@
+.body {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.leftScreen {
+    width: 40%;
+}
+
+.img2 {
+    display: none;
+}
+
+.leftScreen img {
+    width: 100%;
+}
+
+.rightScreen {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.box {
+    width: 100%;
+    margin-left: 10%;
+}
+
+.brand {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: x-large;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: xxx-large;
+    padding-bottom: 25px;
+    color: hsl(212, 21%, 14%);
+    width: 300px;
+    line-height: 50px;
+    margin: 15px 0 15px 0;
+}
+
+.subHeading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    padding-bottom: 20px;
+    width: 380px;
+    color: hsl(228, 12%, 48%);
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.cost {
+    display: flex;
+    font-size: xx-large;
+    padding-bottom: 20px;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 15px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.less {
+    font-size: 16px;
+    font-weight: bolder;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin: 12px 0 0px 20px;
+}
+
+.btn {
+    min-width: 350px;
+    padding: 20px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 12px;
+    font-weight: bolder;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
+.cart {
+    width: 25px;
+    padding-right: 10px;
+}
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 400px) {
+
+    .body {
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+
+    .container {
+        width: 95%;
+        flex-direction: column;
+        padding: 0;
+        margin: 2%;
+    }
+
+
+    .rightScreen,
+    .leftScreen {
+        width: 98%;
+    }
+
+    .img2 {
+        display: block;
+        width: 100%;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .box {
+        width: auto;
+        margin: 5%;
+    }
+
+    .brand {
+        font-size: large;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    .heading {
+        font-size: 35px;
+        padding: 0;
+        width: fit-content;
+        margin: 10px 0 15px 0;
+        line-height: 35px;
+    }
+
+    .subHeading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        width: 100%;
+        color: hsl(228, 12%, 48%);
+        line-height: 25px;
+        margin-bottom: 10px;
+
+    }
+
+    .btn {
+        min-width: 310px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .cart {
+        width: 22px;
+    }
+
+}
